@@ -1,0 +1,33 @@
+package Task2;
+
+public class Movie {
+    private final String name;
+    private  final long yearofrelease;
+    private final Genre genre;
+
+    public Movie(String name, long yearofrelease, Genre genre) {
+        this.name = name;
+        this.yearofrelease = yearofrelease;
+        this.genre = genre;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public long getYearofrelease() {
+        return yearofrelease;
+    }
+    @Override
+    public String toString() {
+        return "Product{" +
+                ", name='" + name +
+                ", yearofrelease='" + yearofrelease + '\'' +
+                ", genre=" + genre +
+                '}';
+    }
+}
